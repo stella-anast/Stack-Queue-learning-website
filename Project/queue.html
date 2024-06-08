@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Στοίβα</title>
+	<title>Ουρά</title>
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     
@@ -21,37 +21,35 @@
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Αρχική</a></li>
+                    <li class="active"><a href="index.html">Αρχική</a></li>
                     <li  class="active"><a href="stack.html">Στοίβα</a></li>
                     <li><a href="queue.html">Ουρά</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-  <h1 class="text-center">Stack</h1>
-  <div class="container mt-3">
+    <h1 class="text-center">Queue</h1>
+    <div class="container mt-3">
         <div class="section mb-3">
             <div class="section mb-3 smaller-row">
             <div class="input-group mb-3">
                 <input type="text" id="value" class="form-control" placeholder="Enter a value">
                
             </div>
-            <table class="table table-bordered" id="stack">
-                <tbody id="stackElements">
-                    
-                </tbody>
+            <table class="table table-bordered" id="queue">
+                    <tr id="queueElements">
+                       
+                    </tr>
             </table>
 			</div>
         </div>
     </div>
 	<center>
 	 <div class="input-group-btn">
-                    <button class="btn btn-primary" onclick="modifyStack('push')">Push</button>
-                    <button class="btn btn-danger" onclick="modifyStack('pop')">Pop</button>
+                    <button class="btn btn-primary" onclick="modifyQueue('enqueue')">Enqueue</button>
+                    <button class="btn btn-danger" onclick="modifyQueue('denqueue')">Dequeue</button>
      </div>
 	 </center>
-     <script src="stackFunctions.js"></script>
-    
+     <script src="queueFunctions.js"></script>
 </body>
-
 </html>
