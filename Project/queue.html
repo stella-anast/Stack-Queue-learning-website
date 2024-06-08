@@ -28,16 +28,16 @@
             </div>
         </div>
     </nav>
-    <h1 class="text-center">Queue</h1>
+    <h1 class="text-center">Ουρά</h1>
     <div class="container mt-3">
         <div class="section mb-3">
-            <div class="section mb-3 smaller-row">
-            <div class="input-group mb-3">
+            <div class="section mb-3">
+            <div class="input-group mb-5">
                 <input type="text" id="value" class="form-control" placeholder="Enter a value">
-               
             </div>
+            <br>
             <table class="table table-bordered" id="queue">
-                    <tr id="queueElements">
+                    <tr id="queueElements" class="info">
                        
                     </tr>
             </table>
@@ -46,8 +46,8 @@
     </div>
 	<center>
 	 <div class="input-group-btn">
-                    <button class="btn btn-primary" onclick="modifyQueue('enqueue')">Enqueue</button>
-                    <button class="btn btn-danger" onclick="modifyQueue('denqueue')">Dequeue</button>
+                    <button style="margin-right:10px; border-radius:50%;" class="btn btn-primary" onclick="modifyQueue('enqueue')">Εισάγωγη</button>
+                    <button style="margin-left:10px; border-radius:50%;"class="btn btn-danger" onclick="modifyQueue('denqueue')">Εξαγωγή</button>
      </div>
 	 </center>
      <script src="queueFunctions.js"></script>
