@@ -1,0 +1,11 @@
+.button1{
+    border-radius:30%;
+    font-size:25px;
+    font-weight: 600;
+    font-family:system-ui;
+}
+.input1{
+    font-size:35px;
+    height:45px;
+    width:50px;
+}
