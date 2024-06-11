@@ -1,9 +1,10 @@
 function modifyQueue(action){
     var value=document.getElementById('value').value.trim();
+    var elem=parseInt(value);
     var queue=document.getElementById('queueElements');
     var maxRows=5;
     if(action==='enqueue'){
-        if(value!==''){
+        if(value!=='' && Number.isInteger(elem)){
              if(queue.cells.length<maxRows){
                 var row=document.createElement('td');
                 row.textContent=value;
@@ -13,7 +14,7 @@ function modifyQueue(action){
                 alert('Queue is full!');
              }
         }else{
-            alert('Please enter a value');
+            alert('Wrong.Please try again!');
         }
     
     }else if(action==='denqueue'){

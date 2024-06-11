@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Στοίβα και Ουρά</title>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="buttonstyle.css">
+      </head>
+<body style="background-color:#9DC8C8;">
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+            </button>
+            <a class="navbar-brand" href="#">Στοίβα και Ουρά</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Αρχική</a></li>
+               
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Στοίβα<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="stackTheory.html">Θεωρία</a></li>
+                        <li><a href="stack.html">Παιχνίδι</a></li>
+                    </ul>
+                </li>
+                <li  class="active"><a href="stack.html">Στοίβα</a></li>
+                <li><a href="queue.html">Ουρά</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<br><br>
+<h1 style="text-align:center;font-weight:bold;">1.Τι ονομάζεται <u>στοίβα</u>;</h1>
+<br><br>
+<table class="center" style="width:780px;">
+    <tr>
+        <td class="center h2"> &nbsp;&nbsp;&nbsp;&nbsp;Στοίβα (stack), ονομάζεται μια δομή δεδομένων το σύνολο των στοιχείων της οποίας
+            είναι διατεταγμένο με τέτοιο τρόπο, ώστε τα στοιχεία που βρίσκονται στην κορυφή της στοίβας
+            λαμβάνονται πρώτα, ενώ αυτά που βρίσκονται στο βάθος της στοίβας λαμβάνονται τελευταία. Η παραπάνω μέθοδος ονομάζεται Τελευταίο Μέσα, Πρώτο Έξω ή LIFO (=Last In First Out).</td>
+    </tr>
+</table>
+<br><br>
+<h1 style="text-align:center;font-weight:bold;">2.Ποιες είναι οι <u>κύριες λειτουργίες</u> σε μια στοίβα;</h1>
+<br><br>
+<table class="center row" style="width:800px;">
+    <tr>
+        <td class="center h2"> &nbsp;&nbsp;&nbsp;&nbsp;&#x2022;Η ώθηση (push) στοιχείου στην κορυφή της στοίβας. Στη διαδικασία της ώθησης ελέγχουμε αν η στοίβα είναι γεμάτη. Στην περίπτωση που προσπαθήσουμε να «προσθέσουμε» ένα στοιχείο σε μια ήδη γεμάτη στοίβα, έχουμε υπερχείλιση (overflow) της στοίβας</td>
+    </tr>
+    <tr>
+        <td class="center row h2"> &nbsp;&nbsp;&nbsp;&nbsp;&#x2022;Η απώθηση (pop) στοιχείου από τη στοίβα. Στη διαδικασία της απώθησης ελέγχουμε αν υπάρχει ένα τουλάχιστον στοιχείο στη στοίβα. Στην περίπτωση που προσπαθήσουμε να «αφαιρέσουμε» ένα στοιχείο από μία κενή στοίβα, έχουμε υποχείλιση (underflow) της στοίβας.</td>
+    </tr>
+</table>
+</body>
+</html>
