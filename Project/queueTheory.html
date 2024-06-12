@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Στοίβα και Ουρά</title>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="buttonstyle.css">
+        <link rel="icon" href="icon.png">
+        <link href='https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap' rel='stylesheet'>
+      </head>
+<body class="styling" style="background-color:#9DC8C8;">
+    <nav style="height:70px;background-color: #F6DADA;"class="navbar navbar-default">
+   
+        <div class="collapse navbar-collapse" style="font-size:30px;" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="element"><a href="index.html">Αρχική</a></li>
+               
+                <li class="element dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Στοίβα<span class="caret"></span></a>
+                    <ul class="element1 dropdown-menu">
+                        <li><a href="stackTheory.html">Θεωρία</a></li>
+                        <li><a href="stack.html">Παιχνίδι</a></li>
+                    </ul>
+                </li>
+                <li class="element dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Ουρά<span class="caret"></span></a>
+                    <ul class="element1 dropdown-menu">
+                        <li><a href="queueTheory.html">Θεωρία</a></li>
+                        <li><a href="queue.html">Παιχνίδι</a></li>
+                    </ul>
+                </li>
+               
+            </ul>
+        </div>
+    </div>
+</nav>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<br><br>
+<h1 class="header">1.Τι ονομάζεται <u>ουρά</u>;</h1>
+<br><br>
+<table class="center" style="width:780px;">
+    <tr>
+        <td class="center h2 zoom"> &nbsp;&nbsp;&nbsp;&nbsp;Ουρά (Queue),ονομάζεται μια δομή δεδομένων το σύνολο των στοιχείων της οποίας είναι διατεταγμένο με τέτοιο τρόπο, ώστε τα στοιχεία που τοποθετήθηκαν πρώτα στην ουρά να λαμβάνονται επίσης πρώτα. Η παραπάνω μέθοδος ονομάζεται Πρώτο Μέσα, Πρώτο Έξω ή FIFO (=First In First Out).
+        </td>
+    </tr>
+</table>
+<br><br>
+<h1 class="header">2.Ποιες είναι οι <u>κύριες λειτουργίες</u> σε μια ουρά;</h1>
+<br><br>
+<table class="center row" style="width:800px;">
+    <tr>
+        <td class="center h2 zoom"> &nbsp;&nbsp;&nbsp;&nbsp;&#x2022;Η εισαγωγή (enqueue) στοιχείου στο πίσω άκρο της ουράς.</td>
+    </tr>
+    <tr>
+        <td class="center row h2 zoom"> &nbsp;&nbsp;&nbsp;&nbsp;&#x2022;Η εξαγωγή (dequeue) στοιχείου από το εμπρός άκρο της ουράς.
+        </td>
+    </tr>
+</table>
+<br><br>
+<h1 class="header">&#9755;Αλγόριθμος για την εισαγωγή στοιχείου</h1>
+<table class="center row" style="width:800px;">
+    <tr>
+        <td class="h2"> 
+            <div class="td1">
+                <br>&nbsp;&nbsp;Αλγόριθμος Εισαγωγή
+                <br>&nbsp;&nbsp;Δεδομένα //ΟΥΡΑ, Ν, πίσω, στοιχείο//
+                <br>&nbsp;&nbsp;Αν πίσω < Ν τότε<br>
+                &ensp;&ensp;πίσω ← πίσω + 1<br>
+                &ensp;&ensp;ΟΥΡΑ [ πίσω ] ← στοιχείο<br>
+                          &ensp;&ensp;έγινε ← αληθής<br>
+                          &nbsp;&nbsp;Αλλιώς<br>
+                          &ensp;&ensp;έγινε ← ψευδής<br>
+                          &nbsp;&nbsp;Τέλος_αν<br>
+                          &nbsp;&nbsp;Αποτελέσματα //ΟΥΡΑ, πίσω, έγινε//<br>
+                          &nbsp;&nbsp;Τέλος Εισαγωγή<br>
+                          </div>
+        </td>
+    </tr>
+   
+</table>
+<br><br>
+<h1 class="header">&#9755;Αλγόριθμος για την εξαγωγή στοιχείου</h1>
+<table class="center row" style="width:800px;">
+    <tr>
+        <td class="h2"> 
+            <div class="td1">
+                <br>&nbsp;&nbsp;Αλγόριθμος Εξαγωγή
+                <br>&nbsp;&nbsp;Δεδομένα //ΟΥΡΑ, εμπρός, πίσω//
+                <br>&nbsp;&nbspΑν πίσω ≤ εμπρός τότε<br>
+                &ensp;&ensp;στοιχείο ← ΟΥΡΑ[εμπρός]<br>
+                &ensp;&ensp;εμπρός ← εμπρός + 1<br>
+                          &ensp;&ensp;έγινε ← αληθής<br>
+                          &nbsp;&nbsp;Αλλιώς<br>
+                          &ensp;&ensp;έγινε ← ψευδής<br>
+                          &nbsp;&nbsp;Τέλος_αν<br>
+                          &nbsp;&nbsp;Αποτελέσματα//ΟΥΡΑ, εμπρός, στοιχείο, έγινε//<br>
+                          &nbsp;&nbsp;Τέλος Εξαγωγή<br>
+                          </div>
+        </td>
+    </tr>
+   
+</table>
+</body>
+</html>

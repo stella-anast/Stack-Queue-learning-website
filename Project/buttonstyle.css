@@ -45,3 +45,9 @@
     margin-left:100px;
     font-weight: bold;
 }
+.zoom{
+    transition: transform .2s;
+}
+.zoom:hover {
+    transform: scale(1.1);
+  }
