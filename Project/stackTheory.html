@@ -38,7 +38,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <br><br>
-<h1 style="text-align:center;font-weight:bold;">1.Τι ονομάζεται <u>στοίβα</u>;</h1>
+<h1 class="header">1.Τι ονομάζεται <u>στοίβα</u>;</h1>
 <br><br>
 <table class="center" style="width:780px;">
     <tr>
@@ -48,7 +48,7 @@
     </tr>
 </table>
 <br><br>
-<h1 style="text-align:center;font-weight:bold;">2.Ποιες είναι οι <u>κύριες λειτουργίες</u> σε μια στοίβα;</h1>
+<h1 class="header">2.Ποιες είναι οι <u>κύριες λειτουργίες</u> σε μια στοίβα;</h1>
 <br><br>
 <table class="center row" style="width:800px;">
     <tr>
@@ -57,6 +57,51 @@
     <tr>
         <td class="center row h2"> &nbsp;&nbsp;&nbsp;&nbsp;&#x2022;Η απώθηση (pop) στοιχείου από τη στοίβα. Στη διαδικασία της απώθησης ελέγχουμε αν υπάρχει ένα τουλάχιστον στοιχείο στη στοίβα. Στην περίπτωση που προσπαθήσουμε να «αφαιρέσουμε» ένα στοιχείο από μία κενή στοίβα, έχουμε υποχείλιση (underflow) της στοίβας.</td>
     </tr>
+</table>
+<br><br>
+<h1 class="header">&#9755;Αλγόριθμος για την ώθηση στοιχείου</h1>
+<table class="center row" style="width:800px;">
+    <tr>
+        <td class="h2"> 
+            <div class="td1">
+            <br>&nbsp;&nbsp;Αλγόριθμος Ώθηση
+            <br>&nbsp;&nbsp;Δεδομένα //ΣΤΟΙΒΑ, Ν, κορυφή, στοιχείο//
+            <br>&nbsp;&nbsp;Αν κορυφή < Ν τότε<br>
+            &ensp;&ensp; κορυφή ← κορυφή + 1<br>
+            &ensp;&ensp;ΣΤΟΙΒΑ[κορυφή] ← στοιχείο<br>
+            &ensp;&ensp;υπερχείλιση ← ψευδής<br>
+            &nbsp;&nbsp;Αλλιώς<br>
+            &ensp;&ensp;υπερχείλιση ← αληθής<br>
+            &nbsp;&nbsp;Τέλος_αν<br>
+            &nbsp;&nbsp;Αποτελέσματα //ΣΤΟΙΒΑ,κορυφή,υπερχείλιση//<br>
+            &nbsp;&nbsp;Τέλος Ώθηση<br>
+            </div>
+        </td>
+    </tr>
+   
+</table>
+<br><br>
+<h1 class="header">&#9755;Αλγόριθμος για την απώθηση στοιχείου</h1>
+<table class="center row" style="width:800px;">
+    <tr>
+        <td class="h2"> 
+            <div class="td1">
+                <br>&nbsp;&nbsp;Αλγόριθμος Απώθηση
+                <br>&nbsp;&nbsp;Δεδομένα //ΣΤΟΙΒΑ, κορυφή//
+                <br>&nbsp;&nbsp;Αν κορυφή ≥ 1 τότε<br>
+                &ensp;&ensp;στοιχείο ← ΣΤΟΙΒΑ [ κορυφή ]<br>
+                &ensp;&ensp;κορυφή ← κορυφή -1<br>
+                &ensp;&ensp;υποχείλιση ← ψευδής<br>
+                &nbsp;&nbsp;Αλλιώς<br>
+                &ensp;&ensp;υποχείλιση ← αληθής<br>
+                &nbsp;&nbsp;Τέλος_αν<br>
+                &nbsp;&nbsp;Αποτελέσματα//ΣΤΟΙΒΑ,κορυφή,<br>
+                &nbsp;&nbsp;υποχείλιση,στοιχείο//<br>
+                &nbsp;&nbsp;Τέλος Απώθηση<br>
+                </div>
+        </td>
+    </tr>
+   
 </table>
 </body>
 </html>
