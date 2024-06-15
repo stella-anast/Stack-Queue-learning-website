@@ -1,5 +1,6 @@
 function modifyStack(action) {
     var input = document.getElementById('value').value.trim();
+    var top=0;
     var stack = document.getElementById('stackElements');
     var maxRows = 5; 
 
@@ -9,6 +10,7 @@ function modifyStack(action) {
                 var row =stack.insertRow(0);
                 var cell = row.insertCell(0);
                 cell.textContent = input;
+                top=stack.rows.length;
                 document.getElementById('value').value = ''; 
             } else {
                 alert('The stack is full!');
@@ -19,8 +21,11 @@ function modifyStack(action) {
     } else if (action === 'pop') {
         if (stack.rows.length > 0) {
             stack.deleteRow(0);
+            top = stack.rows.length;
         } else {
             alert('Stack is empty!');
         }
     }
+    var top = stack.rows.length;
+    document.getElementById('topValue').textContent = 'Top: ' + top;
 }

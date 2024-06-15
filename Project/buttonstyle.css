@@ -1,11 +1,16 @@
 .button1{
-    border-radius:30%;
-    font-size:25px;
-    font-weight: 600;
+    border-radius:50%;
+    font-size:30px;
     font-family: 'Poppins', sans-serif;
+    padding:9px;
+    background-color: #273D77;
+    color:white;
+}
+.button1:hover{
+    background-color:#1C2F60;
 }
 .input1{
-    font-size:25px;
+    font-size:30px;
     height:45px;
     width:4px;
 }
@@ -20,6 +25,10 @@
     font-size:25px;
     background-color:#0C1844;
     
+}
+.border{
+    border: 1px solid black;
+  /*border-collapse: collapse;*/
 }
 .row{
     padding-top:50px;
@@ -55,9 +64,23 @@
     border-width: 0;
     top: 0;
   }
-  .ex{
-    color:red;
-  }
+.t1{
+    margin-bottom:50px;
+    padding:20px;
+    font-weight:bold;
+    padding-bottom:2em;
+}
+.spacing{
+    padding-bottom:1em;
+}
+.th1{
+    text-align:center;
+    font-weight:bold;
+    
+}
+.sp{
+    width:300px;
+}
 .navbar-nav > li > a:hover,
 .navbar-nav > li > a:focus {
     background-color: #0C1844; /* Change this to your desired hover background color */

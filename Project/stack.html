@@ -39,26 +39,36 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <br><br>
-  <h1 class="text-center">Stack</h1>
+  <h1 style="font-size:50px" class="text-center">Στοίβα</h1>
+  <br><br>
   <div class="container mt-3">
         <div class="section mb-3">
             <div class="section mb-3 smaller-row">
             <div class="input-group mb-3">
-                <input type="text" style="font-size:20px;" class="form-control" id="value"  placeholder="Enter a value">
+                <input type="text" style="font-size:30px;" class="input1 form-control" id="value"  placeholder="Enter a value">
                
             </div>
-            <table class="table table-bordered" id="stack">
-                <tbody id="stackElements">
+            <br><br>
+            <table style="font-size:30px;"class="sp center table table-bordered" id="stack">
+                
+                    <div id="topValue" style="font-size:30px; margin-top:10px;">Top: 0</div>
+                   <br>
+                
+                <tbody id="stackElements" style="text-align: center;" class="info">
+                        
+                    
+                    
                     
                 </tbody>
             </table>
+            
 			</div>
         </div>
     </div>
 	<center>
 	 <div class="input-group-btn">
-                    <button class="btn btn-primary" onclick="modifyStack('push')">Push</button>
-                    <button class="btn btn-danger" onclick="modifyStack('pop')">Pop</button>
+                    <button style="margin-right:8px;" class="button1" onclick="modifyStack('push')">Ώθηση</button>
+                    <button style="margin-left:8px;" class="button1 " onclick="modifyStack('pop')">Απώθηση</button>
      </div>
 	 </center>
      <script src="stackFunctions.js"></script>
