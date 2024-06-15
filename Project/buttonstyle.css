@@ -2,12 +2,12 @@
     border-radius:30%;
     font-size:25px;
     font-weight: 600;
-    font-family:system-ui;
+    font-family: 'Poppins', sans-serif;
 }
 .input1{
-    font-size:35px;
+    font-size:25px;
     height:45px;
-    width:50px;
+    width:4px;
 }
 .center{
     margin-left: auto;
@@ -17,8 +17,9 @@
 .element{
     padding-top:10px;
     font-family: 'Poppins', sans-serif;
-    background-color: #F6DADA;
     font-size:25px;
+    background-color:#0C1844;
+    
 }
 .row{
     padding-top:50px;
@@ -30,8 +31,7 @@
 }
 .element1{
     font-family: 'Poppins', sans-serif;
-    background-color: #F6DADA;
-    font-size:18px;
+    font-size:25px;
 }
 .styling{
     font-family: 'Poppins', sans-serif;
@@ -51,3 +51,27 @@
 .zoom:hover {
     transform: scale(1.1);
   }
+.el{
+    border-width: 0;
+    top: 0;
+  }
+  .ex{
+    color:red;
+  }
+.navbar-nav > li > a:hover,
+.navbar-nav > li > a:focus {
+    background-color: #0C1844; /* Change this to your desired hover background color */
+    color: #FFD700; /* Change this to your desired hover text color */
+}
+
+.navbar-nav .dropdown-menu > li > a:hover,
+.navbar-nav .dropdown-menu > li > a:focus {
+    background-color: #0C1844; /* Change this to your desired hover background color for dropdown items */
+    color: white; /* Change this to your desired hover text color for dropdown items */
+}
+.navbar-nav .dropdown.open .dropdown-toggle {
+    background-color: #0C1844 !important; /* Same as the navbar background color */
+    color: white !important; /* Ensure text color remains white */
+}
+
+

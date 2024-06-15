@@ -7,28 +7,38 @@
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="buttonstyle.css">
-    
+    <link rel="icon" href="icon.png">
+        <link href='https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap' rel='stylesheet'>
   </head>
-<body>
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>                        
-                </button>
-                <a class="navbar-brand" href="#">Στοίβα και Ουρά</a>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="index.html">Αρχική</a></li>
-                    <li  class="active"><a href="stack.html">Στοίβα</a></li>
-                    <li><a href="queue.html">Ουρά</a></li>
-                </ul>
-            </div>
+  <body class="styling" style="background-color:#FFF5E1;">
+    <nav style="height:60px;background-color:#0C1844;"class="el navbar navbar-default">
+   
+        <div class="collapse navbar-collapse"  id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="element"><a style="color:white" href="index.html">Αρχική</a></li>
+               
+                <li class="element dropdown">
+                    <a  style="color:white" class="dropdown-toggle" data-toggle="dropdown" href="#">Στοίβα<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a  class="element1" href="stackTheory.html">Θεωρία</a></li>
+                        <li><a class="element1" href="stack.html">Παιχνίδι</a></li>
+                    </ul>
+                </li>
+                <li class="element dropdown">
+                    <a style="color:white" class="dropdown-toggle" data-toggle="dropdown" href="#">Ουρά<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a class="element1" href="queueTheory.html">Θεωρία</a></li>
+                        <li><a class="element1" href="queue.html">Παιχνίδι</a></li>
+                    </ul>
+                </li>
+               
+            </ul>
         </div>
-    </nav>
+    </div>
+</nav>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<br><br>
     <h1 style="font-size:50px" class="text-center">Ουρά</h1>
     <br><br>
     <div class="container mt-3">
@@ -39,7 +49,7 @@
             </div>
             <br>
             <table style="font-size:35px;" class="table table-bordered" id="queue">
-                    <tr id="queueElements" class="info">
+                    <tr id="queueElements" style="text-align: ;"class="info">
                        
                     </tr>
             </table>
