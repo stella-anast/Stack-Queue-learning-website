@@ -13,17 +13,17 @@ function modifyStack(action) {
                 top=stack.rows.length;
                 document.getElementById('value').value = ''; 
             } else {
-                alert('The stack is full!');
+                alert('Η στοίβα είναι γεμάτη!');
             }
         } else {
-            alert('Please enter a value');
+            alert('Λάθος.Παρακαλώ προσπαθήστε ξανά!');
         }
     } else if (action === 'pop') {
         if (stack.rows.length > 0) {
             stack.deleteRow(0);
             top = stack.rows.length;
         } else {
-            alert('Stack is empty!');
+            alert('Η στοίβα είναι γεμάτη.Παρακαλώ προσθέστε στοιχεία πρώτα!');
         }
     }
     var top = stack.rows.length;

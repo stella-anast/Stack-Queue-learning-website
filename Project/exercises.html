@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Στοίβα και Ουρά</title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="buttonstyle.css">
+    <link rel="icon" href="icon.png">
+    <link href='https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap' rel='stylesheet'>
+  </head>
+  <body class="styling" style="background-color:#FFF5E1;">
+    <nav style="height:60px;background-color:#0C1844;"class="el navbar navbar-default">
+   
+        <div class="collapse navbar-collapse"  id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="element"><a style="color:white" href="index.html">Αρχική</a></li>
+               
+                <li class="element dropdown">
+                    <a  style="color:white" class="dropdown-toggle" data-toggle="dropdown" href="#">Στοίβα<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a  class="element1" href="stackTheory.html">Θεωρία</a></li>
+                        <li><a class="element1" href="stack.html">Παιχνίδι</a></li>
+                    </ul>
+                </li>
+                <li class="element dropdown">
+                    <a style="color:white" class="dropdown-toggle" data-toggle="dropdown" href="#">Ουρά<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a class="element1" href="queueTheory.html">Θεωρία</a></li>
+                        <li><a class="element1" href="queue.html">Παιχνίδι</a></li>
+                    </ul>
+                </li>
+                <li class="element"><a style="color:white" href="exercises.html">Ασκήσεις</a></li>
+               
+            </ul>
+        </div>
+    </div>
+</nav>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<br><br>
+<center><h1 class="center">Συμπλήρωση Κενών</h1>
+    <br><br>
+    <table  class="center" style="width:780px;">
+        <th class="h2 spacing">1.Σε µία ουρά 10 θέσεων έχουν τοποθετηθεί διαδοχικά τα στοιχεία: Μ, Κ, ∆, Α, Σ στην πρώτη,
+            δεύτερη, τρίτη, τέταρτη και πέµπτη θέση αντίστοιχα.</th>
+        <tr>
+            <td class="h3 space1">
+                α.Να προσδιορίσετε τις τιµές των δεικτών της παραπάνω ουράς. 
+                <br><br>
+                front=<input type="text" style="width:130px;"  id="front1"  placeholder="Απάντηση">
+                <br><br>
+                rear=&nbsp;<input type="text" style="width:130px;"  id="rear1"  placeholder="Απάντηση">
+            </td>
+           
+        </tr>
+        <tr>
+            <td class="h3 space1">
+                <br>
+                β.Στη συνέχεια να αφαιρέσετε ένα στοιχείο από την ουρά. Ποιος δείκτης µεταβάλλεται και ποια η
+                νέα του τιµή;
+                <br><br>
+                <input type="text" style="width:130px;"  id="front"  placeholder="Απάντηση">=<input type="text" style="width:120px;"  id="front2"  placeholder="Απάντηση">            
+            </td>
+           
+        </tr>
+        <tr>
+            <td class="h3 space1">
+                <br>
+                γ.Τέλος να τοποθετήσετε το στοιχείο Λ στην ουρά. Ποιος δείκτης µεταβάλλεται και ποια η νέα του τιµή;
+                <br><br>
+                <input type="text" style="width:130px;"  id="rear"  placeholder="Απάντηση">=<input type="text" style="width:120px;"  id="rear2"  placeholder="Απάντηση">            
+            </td>
+           
+        </tr>
+        
+        <th class="h2 spacing"><br><br>2.Δίνεται η παρακάτω ακολουθία αριθμών: 25, 8, 12, 14, 71, 41, 1. Τοποθετούμε τους αριθμούς σε
+            στοίβα και σε ουρά.</th>
+            <tr>
+                <td class="h3 space1">
+                    <br>
+                    α.Ποια λειτουργία θα χρησιμοποιηθεί για την τοποθέτηση των αριθμών στη στοίβα και ποια για την
+                    τοποθέτησή τους στην ουρά;
+                    <br><br>
+                    Στοίβα:<input type="text" style="width:130px;"  id="pop"  placeholder="Απάντηση">
+                    <br><br>
+                    Ουρά:&nbsp;<input type="text" style="width:130px;"  id="enqueue"  placeholder="Απάντηση">  
+                </td>
+            </tr>
+            <tr>
+                <td class="h3 space1">
+                    <br>
+                    β.Ποια λειτουργία θα χρησιμοποιηθεί για την έξοδο αριθμών από τη στοίβα και ποια για την έξοδό
+                    τους από την ουρά;
+                    <br><br>
+                    Στοίβα:<input type="text" style="width:130px;"  id="push"  placeholder="Απάντηση">
+                    <br><br>
+                    Ουρά:&nbsp;<input type="text" style="width:130px;"  id="denqueue"  placeholder="Απάντηση">  
+                </td>
+            </tr>
+    </table>
+    <br><br><br><br>
+    <button class="button1 btn-primary" onclick="check()">Έλεχγος</button>
+</center>
+<br><br>
+<script src="checkAnswers.js"></script>
+</body>
+</html>

@@ -11,17 +11,17 @@ function modifyQueue(action){
                 queue.appendChild(row); //add new row
                 document.getElementById('value').value=''; //clear input value field
              }else{
-                alert('Queue is full!');
+                alert('Η ουρά είναι γεμάτη!');
              }
         }else{
-            alert('Wrong.Please try again!');
+            alert('Λάθος.Παρακαλώ προσπαθήστε ξανά!');
         }
     
     }else if(action==='denqueue'){
       if (queue.cells.length > 0) {
         queue.deleteCell(0);
        }else{
-           alert('Queue is empty!');
+           alert('Η ουρά είναι άδεια!');
        }
 
     }
