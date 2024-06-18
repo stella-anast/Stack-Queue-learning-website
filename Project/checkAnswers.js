@@ -21,6 +21,16 @@ function check(){
   var answer4=document.getElementById("answer4").value.trim();
   var answer5=document.getElementById("answer5").value.trim();
   var answer6=document.getElementById("answer6").value.trim();
+  var answer7=document.getElementById("answer7").value.trim();
+  var answer8=document.getElementById("answer8").value.trim();
+  var answer9=document.getElementById("answer9").value.trim();
+  var answer10=document.getElementById("answer10").value.trim();
+  var answer11=document.getElementById("answer11").value.trim();
+  var answer12=document.getElementById("answer12").value.trim();
+  var answer13=document.getElementById("answer13").value.trim();
+  var answer14=document.getElementById("answer14").value.trim();
+  var answer15=document.getElementById("answer15").value.trim();
+  var answer16=document.getElementById("answer16").value.trim();
   var count=0;
   if(front1=='1'){
     document.getElementById("front1").style.backgroundColor='green';
@@ -118,9 +128,69 @@ function check(){
   }else{
     document.getElementById("answer6").style.backgroundColor='red';
   }
+  if(answer7==2){
+    document.getElementById("answer7").style.backgroundColor='green';
+    count++;
+  }else{
+    document.getElementById("answer7").style.backgroundColor='red';
+  }
+  if(answer8==3){
+    document.getElementById("answer8").style.backgroundColor='green';
+    count++;
+  }else{
+    document.getElementById("answer8").style.backgroundColor='red';
+  }
+  if(answer9==4){
+    document.getElementById("answer9").style.backgroundColor='green';
+    count++;
+  }else{
+    document.getElementById("answer9").style.backgroundColor='red';
+  }
+  if(answer10==1){
+    document.getElementById("answer10").style.backgroundColor='green';
+    count++;
+  }else{
+    document.getElementById("answer10").style.backgroundColor='red';
+  }
+  if(answer11=='Λ'){
+    document.getElementById("answer11").style.backgroundColor='green';
+    count++;
+  }else{
+    document.getElementById("answer11").style.backgroundColor='red';
+  }
+  if(answer12=='Σ'){
+    document.getElementById("answer12").style.backgroundColor='green';
+    count++;
+  }else{
+    document.getElementById("answer12").style.backgroundColor='red';
+  }
+  if(answer13=='Λ'){
+    document.getElementById("answer13").style.backgroundColor='green';
+    count++;
+  }else{
+    document.getElementById("answer13").style.backgroundColor='red';
+  }
+  if(answer14=='Σ'){
+    document.getElementById("answer14").style.backgroundColor='green';
+    count++;
+  }else{
+    document.getElementById("answer14").style.backgroundColor='red';
+  }
+  if(answer15=='Λ'){
+    document.getElementById("answer15").style.backgroundColor='green';
+    count++;
+  }else{
+    document.getElementById("answer15").style.backgroundColor='red';
+  }
+  if(answer16=='Σ'){
+    document.getElementById("answer16").style.backgroundColor='green';
+    count++;
+  }else{
+    document.getElementById("answer16").style.backgroundColor='red';
+  }
   //Για να γίνουν πρώτα πράσινα τα input
   setTimeout(function() {
-    if (count===15){
+    if (count===26){
     alert('Συγχαρητήρια!!!');
     }
   }, 0);
