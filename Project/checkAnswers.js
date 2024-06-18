@@ -15,6 +15,12 @@ function check(){
   var newPush=push.toUpperCase();
   var denqueue=document.getElementById("denqueue").value.trim();
   var newDenqueue=denqueue.toUpperCase();
+  var answer1=document.getElementById("answer1").value.trim();
+  var answer2=document.getElementById("answer2").value.trim();
+  var answer3=document.getElementById("answer3").value.trim();
+  var answer4=document.getElementById("answer4").value.trim();
+  var answer5=document.getElementById("answer5").value.trim();
+  var answer6=document.getElementById("answer6").value.trim();
   var count=0;
   if(front1=='1'){
     document.getElementById("front1").style.backgroundColor='green';
@@ -76,9 +82,48 @@ function check(){
   }else{
     document.getElementById("denqueue").style.backgroundColor='red';
   }
-  if(count===10){
-    alert("Συγχαρητήρια!!!");
+  if(answer1=='3'){
+    document.getElementById("answer1").style.backgroundColor='green';
+    count++;
+  }else{
+    document.getElementById("answer1").style.backgroundColor='red';
   }
+  if(answer2=='5'){
+    document.getElementById("answer2").style.backgroundColor='green';
+    count++;
+  }else{
+    document.getElementById("answer2").style.backgroundColor='red';
+  }
+  if(answer3=='10 6 5 8 10' || answer3=='1065810'){
+    document.getElementById("answer3").style.backgroundColor='green';
+    count++;
+  }else{
+    document.getElementById("answer3").style.backgroundColor='red';
+  }
+  if(answer4==5){
+    document.getElementById("answer4").style.backgroundColor='green';
+    count++;
+  }else{
+    document.getElementById("answer4").style.backgroundColor='red';
+  }
+  if(answer5==7){
+    document.getElementById("answer5").style.backgroundColor='green';
+    count++;
+  }else{
+    document.getElementById("answer5").style.backgroundColor='red';
+  }
+  if(answer6=='ΔΧΔ' || answer6=='Δ Χ Δ'){
+    document.getElementById("answer6").style.backgroundColor='green';
+    count++;
+  }else{
+    document.getElementById("answer6").style.backgroundColor='red';
+  }
+  //Για να γίνουν πρώτα πράσινα τα input
+  setTimeout(function() {
+    if (count===15){
+    alert('Συγχαρητήρια!!!');
+    }
+  }, 0);
 
 
 }
