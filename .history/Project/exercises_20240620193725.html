@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Στοίβα και Ουρά</title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="buttonstyle.css">
+    <link rel="icon" href="icon.png">
+    <link href='https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap' rel='stylesheet'>
+  </head>
+  <body class="styling" style="background-color:#FFF5E1;">
+    <nav style="height:60px;background-color:#0C1844;"class="el navbar navbar-default">
+   
+        <div class="collapse navbar-collapse"  id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="element"><a style="color:white" href="index.html">Αρχική</a></li>
+               
+                <li class="element dropdown">
+                    <a  style="color:white" class="dropdown-toggle" data-toggle="dropdown" href="#">Στοίβα<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a  class="element1" href="stackTheory.html">Θεωρία</a></li>
+                        <li><a class="element1" href="stack.html">Παιχνίδι</a></li>
+                    </ul>
+                </li>
+                <li class="element dropdown">
+                    <a style="color:white" class="dropdown-toggle" data-toggle="dropdown" href="#">Ουρά<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a class="element1" href="queueTheory.html">Θεωρία</a></li>
+                        <li><a class="element1" href="queue.html">Παιχνίδι</a></li>
+                    </ul>
+                </li>
+                <li class="element"><a style="color:white" href="exercises.html">Ασκήσεις</a></li>
+               
+            </ul>
+        </div>
+    </div>
+</nav>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<br><br>
+<center><h1 class="center">Συμπλήρωση Κενών</h1>
+    <br><br>
+    <table  class="center" style="width:780px;">
+        <th class="h2 spacing">1.Σε µία ουρά 10 θέσεων έχουν τοποθετηθεί διαδοχικά τα στοιχεία: Μ, Κ, ∆, Α, Σ στην πρώτη,
+            δεύτερη, τρίτη, τέταρτη και πέµπτη θέση αντίστοιχα.</th>
+        <tr>
+            <td class="h3 space1">
+                α.Να προσδιορίσετε τις τιµές των δεικτών της παραπάνω ουράς. 
+                <br><br>
+                front=<input type="text" style="width:130px;"  id="front1"  placeholder="Απάντηση">
+                <br><br>
+                rear=&nbsp;<input type="text" style="width:130px;"  id="rear1"  placeholder="Απάντηση">
+            </td>
+           
+        </tr>
+        <tr>
+            <td class="h3 space1">
+                <br>
+                β.Στη συνέχεια να αφαιρέσετε ένα στοιχείο από την ουρά. Ποιος δείκτης µεταβάλλεται και ποια η
+                νέα του τιµή;
+                <br><br>
+                <input type="text" style="width:130px;"  id="front"  placeholder="Απάντηση">=<input type="text" style="width:120px;"  id="front2"  placeholder="Απάντηση">            
+            </td>
+           
+        </tr>
+        <tr>
+            <td class="h3 space1">
+                <br>
+                γ.Τέλος να τοποθετήσετε το στοιχείο Λ στην ουρά. Ποιος δείκτης µεταβάλλεται και ποια η νέα του τιµή;
+                <br><br>
+                <input type="text" style="width:130px;"  id="rear"  placeholder="Απάντηση">=<input type="text" style="width:120px;"  id="rear2"  placeholder="Απάντηση">            
+            </td>
+           
+        </tr>
+        
+        <th class="h2 spacing"><br><br>2.Δίνεται η παρακάτω ακολουθία αριθμών: 25, 8, 12, 14, 71, 41, 1. Τοποθετούμε τους αριθμούς σε
+            στοίβα και σε ουρά.</th>
+            <tr>
+                <td class="h3 space1">
+                    <br>
+                    α.Ποια λειτουργία θα χρησιμοποιηθεί για την τοποθέτηση των αριθμών στη στοίβα και ποια για την
+                    τοποθέτησή τους στην ουρά;
+                    <br><br>
+                    Στοίβα:<input type="text" style="width:130px;"  id="pop"  placeholder="Απάντηση">
+                    <br><br>
+                    Ουρά:&nbsp;<input type="text" style="width:130px;"  id="enqueue"  placeholder="Απάντηση">  
+                </td>
+            </tr>
+            <tr>
+                <td class="h3 space1">
+                    <br>
+                    β.Ποια λειτουργία θα χρησιμοποιηθεί για την έξοδο αριθμών από τη στοίβα και ποια για την έξοδό
+                    τους από την ουρά;
+                    <br><br>
+                    Στοίβα:<input type="text" style="width:130px;"  id="push"  placeholder="Απάντηση">
+                    <br><br>
+                    Ουρά:&nbsp;<input type="text" style="width:130px;"  id="denqueue"  placeholder="Απάντηση">  
+                </td>
+            </tr> 
+            <tr>
+                <td class="h3 space1">
+                    <br>
+                    γ.Πόσες φορές θα πρέπει να γίνει η παραπάνω λειτουργία στη στοίβα και πόσες στην ουρά για να
+                    εξέλθει ο αριθμός 71;
+                    <br><br>
+                    Στοίβα:<input type="text" style="width:130px;"  id="answer1"  placeholder="Απάντηση">
+                    <br><br>
+                    Ουρά:&nbsp;<input type="text" style="width:130px;"  id="answer2"  placeholder="Απάντηση">  
+                </td>
+            </tr>
+            <th class="h2 spacing"><br><br>3.Δίνεται η στοίβα : 4, 5, 8, 10. Να γίνουν οι εξής λειτουργίες:απώθηση,ώθηση 6,ώθηση 10.Συμπληρώστε ποια θα είναι η
+                τελική μορφή της στοίβας.Τα στοιχεία να διαχωρίζονται από ένα κενό ξεκινώντας με το top.</th>
+            <tr>  
+                <td class="h3">
+                    <br>
+                        Στοίβα:<input type="text" style="width:200px;height:35px;"  id="answer3">
+                    <br>
+                </td>
+            </tr>
+            <th class="h2 spacing"><br><br>4.Δίνεται η ουρά:Σ,Γ,Μ,Α,Δ.Αν εφαρμόσουμε τις παρακάτω λειτουργίες: Εξαγωγή,Εξαγωγή,Εξαγωγή,Εισαγωγή Χ,Εισαγωγή Δ και Εξαγωγή ποιά είναι η νέα τιμή των δεικτών front και rear και ποιά η τελική μορφή της ουράς;</th>
+            <tr>
+                <td class="h3 space1">
+                    <br><br>
+                    front=<input type="text" style="width:130px;"  id="answer4"  placeholder="Απάντηση">
+                    <br><br>
+                    rear=&nbsp;<input type="text" style="width:130px;"  id="answer5"  placeholder="Απάντηση">  
+                    <br><br>
+                    Ουρά:&nbsp;<input type="text" style="width:200px;height:35px;"  id="answer6">
+                </td>
+            </tr>
+    </table>
+    <br><br><br><br>
+   
+<h1 class="center">Αντιστοίχιση</h1>
+<br><br>
+    <table  class="center bordered" style="width:780px;">
+        <tr> 
+            <td class="h2 spacing bordered"></td>
+            <td style="text-align:center;" class="h2 spacing bordered">ΛΕΙΤΟΥΡΓΙΑ</td>
+            <td class="h2 spacing bordered"></td>
+            <td style="text-align:center;" class="h2 spacing bordered">ΕΝΤΟΛΗ ΕΚΧΩΡΗΣΗΣ</td>
+        </tr>
+        <tr>
+            <td class="h3 space1 bordered">
+                A.
+            </td> 
+            <td class="h3 space1 bordered">
+                Ώθηση(push) 
+            </td>
+            <td class="h3 space1 bordered">
+                1.
+            </td> 
+            <td class="h3 space1">
+                rear&#8592;rear-1
+            </td>
+        </tr>
+        <tr>
+            <td class="h3 space1 bordered">
+                Β.
+            </td> 
+            <td class="h3 space1 bordered">
+                Απώθηση(pop) 
+            </td>
+            <td class="h3 space1 bordered">
+                2.
+            </td> 
+            <td class="h3 space1 bordered">
+                top&#8592;top+1 
+            </td>
+        </tr>
+        <tr>
+            <td class="h3 space1 bordered">
+                Γ.
+            </td> 
+            <td class="h3 space1 bordered">
+                Εισαγωγή(enqueue)
+            </td>
+            <td class="h3 space1 bordered">
+                3.
+            </td> 
+            <td class="h3 space1 bordered">
+                top&#8592;top-1 
+            </td>
+        </tr>
+        <tr>
+            <td class="h3 space1 bordered">
+                Δ.
+            </td> 
+            <td class="h3 space1 bordered">
+                Εξαγωγή(denqueue)
+            </td>
+            <td class="h3 space1 bordered">
+                4.
+            </td> 
+            <td class="h3 space1 bordered">
+                rear&#8592;rear+1
+            </td>
+        </tr>
+    </table>
+    <br><br><br><br>
+    <table class="center">
+      <tr>
+        <td class="h3 space1">
+         Α.&nbsp;<input type="text" style="width:40px;"  id="answer7">
+        </td>
+        <td class="h3 space1">
+            Β.&nbsp;<input type="text" style="width:40px;"  id="answer8">
+        </td>
+        <td class="h3 space1">
+            Γ.&nbsp;<input type="text" style="width:40px;"  id="answer9">
+        </td>
+        <td class="h3 space1">
+            Δ.&nbsp;<input type="text" style="width:40px;"  id="answer10">
+        </td>
+      </tr>
+    </table>
+    <br><br><br>
+    <h1 class="center">Σωστό Λάθος</h1>
+    <p class="h5">(Συμπληρώστε Σ για Σωστό και Λ για Λάθος)</p>
+    <br><br><br>
+    <table class="center">
+        <tr>
+          <td class="h3 space1">
+            1.Στην υλοποίηση της στοίβας χρειάζονται δύο μεταβλητές-δείκτες για την υλοποίηση
+            των δύο βασικών λειτουργιών που εκτελούνται σε αυτή.&nbsp;<input type="text" style="width:35px;"  id="answer11">
+        <br><br>
+        </td>
+        </tr>
+        <tr>
+            <td class="h3 space1">
+              2.Υπερχείλιση έχουμε όταν εισάγουμε ένα στοιχείο σε μια ήδη γεμάτη στοίβα.&nbsp;<input type="text" style="width:35px;"  id="answer12">
+              <br><br>
+            </td>
+          </tr>
+          <tr>
+            <td class="h3 space1">
+              3.Κάθε στοιχείο που εισάγεται πρώτο σε μια στοίβα είναι αυτό που εξάγεται πρώτο.&nbsp;<input type="text" style="width:35px;"  id="answer13">
+              <br><br>
+            </td>
+          </tr>
+          <tr>
+            <td class="h3 space1">
+              4.Για την υλοποίηση της ουράς μπορεί να χρησιμοποιηθεί πίνακας.&nbsp;<input type="text" style="width:35px;"  id="answer14">
+              <br><br>
+            </td>
+          </tr>
+          <tr>
+            <td class="h3 space1">
+              5.Κατά την εισαγωγή ενός στοιχείου σε ουρά, αυτό τοποθετείται στο μπροστινό άκρο
+              της.&nbsp;<input type="text" style="width:35px;"  id="answer15">
+              <br><br>
+            </td>
+          </tr>
+          <tr>
+            <td class="h3 space1">
+              6.Σε μια ουρά κάθε στοιχείο της εξάγεται από το μπροστινό άκρο της.&nbsp;<input type="text" style="width:35px;"  id="answer16">
+              <br><br>
+            </td>
+          </tr>
+      </table>
+    <br><br>
+    <center>
+    <button class="button1 btn-primary" onclick="check()">Έλεχγος</button>
+</center>
+<br><br>
+<h1 class="center">Άσκηση 1</h1>
+<table class="center">
+    <tr>
+      <td class="h3 space1">
+        Σε μια άδεια στοίβα 10 θέσεων ωθούμε τα στοιχεία Ο, Σ, Ε, Τ, Λ.&nbsp;Με ποιό τρόπο πρέπει να ωθηθούν και να απωθηθούν τα δεδομένα ώστε η στοίβα  να περιέχει  τα δεδομένα Τ, Ε, Λ, Ο, Σ (σε αύξουσες θέσεις του πίνακα).
+      </td>
+    </tr>
+  </table>
+<script src="checkAnswers.js"></script>
+</body>
+</html>
