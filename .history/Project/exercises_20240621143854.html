@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Στοίβα και Ουρά</title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="buttonstyle.css">
+    <link rel="icon" href="icon.png">
+    <link href='https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap' rel='stylesheet'>
+  </head>
+  <body class="styling" style="background-color:#FFF5E1;">
+    <nav style="height:60px;background-color:#0C1844;"class="el navbar navbar-default">
+   
+        <div class="collapse navbar-collapse"  id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="element"><a style="color:white" href="index.html">Αρχική</a></li>
+               
+                <li class="element dropdown">
+                    <a  style="color:white" class="dropdown-toggle" data-toggle="dropdown" href="#">Στοίβα<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a  class="element1" href="stackTheory.html">Θεωρία</a></li>
+                        <li><a class="element1" href="stack.html">Παιχνίδι</a></li>
+                    </ul>
+                </li>
+                <li class="element dropdown">
+                    <a style="color:white" class="dropdown-toggle" data-toggle="dropdown" href="#">Ουρά<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a class="element1" href="queueTheory.html">Θεωρία</a></li>
+                        <li><a class="element1" href="queue.html">Παιχνίδι</a></li>
+                    </ul>
+                </li>
+                <li class="element"><a style="color:white" href="quiz.html">Quiz</a></li>
+                <li class="element"><a style="color:white" href="exercises.html">Ασκήσεις</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <center>
+<h1>Άσκηση 1</h1>
+</center>
+<br>
+<table class="center">
+    <tr>
+      <td class="h3 space1">
+        Σε μια άδεια στοίβα 10 θέσεων ωθούμε τα στοιχεία Ο, Σ, Ε, Τ, Λ.Με ποιό τρόπο πρέπει να ωθηθούν και να απωθηθούν <br>τα δεδομένα ώστε η στοίβα  να περιέχει  τα δεδομένα Τ, Ε, Λ, Ο, Σ (σε αύξουσες θέσεις του πίνακα).
+    <br><br>  
+    </td>
+    </tr>
+  </table>
+  <br>
+  <center>
+  <h1>Άσκηση 2</h1>
+</center>
+  <table class="center">
+  <tr>
+    <td class="h3 space1">
+        Η παραπάνω άσκηση να υλοποιηθεί με ουρά, χρησιμοποιώντας όπου Απώθηση  Εξαγωγή και όπου Ώθηση Εισαγωγή.<br>Επίσης αντί της top να δοθούν οι τιμές των δεικτών rear και front.
+    </td>
+</tr>
+</table>
+<br>
+<center>
+    <h1>Άσκηση 3</h1>
+  </center>
+    <table class="center">
+    <tr>
+      <td class="h3 space1">
+        Να γράψετε πρόγραμμα σε ΓΛΩΣΣΑ το οποίο να διαβάζει ακεραίους αριθμούς και να τους ωθεί σε στοίβα 50 το πολύ <br>στοιχείων.Όταν γεμίσει η στοίβα να γίνει απώθηση όλων των στοιχείων της στοίβας μέχρι αυτή να αδειάσει. 
+      </td>
+  </tr>
+  </table>
+  <center>
+    <h1>Άσκηση 4</h1>
+ 
+    <table>
+    <tr>
+      <td class="h3">
+        Ένα οχηματαγωγό πλοίο, χωρητικότητας 250 αυτοκινήτων, εκτελεί το δρομολόγιο ΠΕΙΡΑΙΑΣ – ΑΙΓΙΝΑ.<br>Τα οχήματα που επιβιβάζονται πρώτα είναι αυτά που θα αποβιβαστούν τελευταία.<br>Στο λιμάνι του Πειραιά προσέρχονται τα αυτοκίνητα για αναχώρηση. Να γίνει πρόγραμμα το οποίο:
+        <br>&nbsp;&#x2022;Να υπάρχει μενού επιλογής:1. Επιβίβαση      2. Αποβίβαση    3. Έξοδος
+         <br>Στη περίπτωση που επιλεχθεί η Επιβίβαση θα διαβάζει τον αριθμό κυκλοφορίας <br>καθενός από τα αυτοκίνητα που προσέρχονται και <br>ο αριθμός κυκλοφορίας του να καταχωρείται στη στοίβα ΟΧΗΜΑΤΑ.<br> Κάθε φορά που επιβιβάζεται ένα αυτοκίνητο να τυπώνεται το ερώτημα "Υπάρχει άλλο αυτοκίνητο (Ν/Ο); ".<br>Αν ο χρήστης απαντήσει Ν (=ΝΑΙ), επαναλαμβάνεται η διαδικασία επιβίβασης,<br>ενώ αν απαντήσει Ο (=ΟΧΙ), σταματά η διαδικασία επιβίβασης και επιστρέφει το πρόγραμμα στο μενού Επιλογής.
+        <br>Αν το πλοίο γεμίσει η επιβίβαση σταματά εμφανίζεται κατάλληλο μήνυμα και επιστρέφει το πρόγραμμα στο μενού επιλογής. 
+        <br>Στη περίπτωση που επιλεχθεί η Αποβίβαση, εξάγει και εμφανίζει από την στοίβα ΟΧΗΜΑΤΑ<br? όλους τους αριθμούς αυτοκινήτων <br>που είχαν επιβιβαστεί στον ΠΕΙΡΑΙΑ, με τη σειρά που αποβιβάζονται.<br>Στο τέλος να τυπώνεται το πλήθος των αυτοκινήτων που αποβιβάστηκαν στο λιμάνι της ΑΙΓΙΝΑΣ
+      </td>
+  </tr>
+  </table>
+</center>
+
+  <br><br>
+</body>
+</html>
