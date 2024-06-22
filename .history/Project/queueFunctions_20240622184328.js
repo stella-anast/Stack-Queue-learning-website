@@ -23,16 +23,11 @@ function modifyQueue(action){
       if (queue.cells.length > 0) {
         queue.deleteCell(0);
         front++;
-        if (queue.cells.length === 0) {
-            front = 0;
-            rear = 0;
-        }
        }else{
            alert('Η ουρά είναι άδεια!');
        }
 
     }
     document.getElementById("front").textContent="Front: "+front;
-    document.getElementById('front').style.marginRight = '20px';
-    document.getElementById("rear").textContent=" Rear: "+rear;
+    document.getElementById("rear").textContent=&ensp;"Rear: "+rear;
 }

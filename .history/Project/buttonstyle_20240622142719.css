@@ -45,8 +45,6 @@
 .styling{
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
-    position: relative;
-  min-height: 100vh;
 }
 .header{
     text-align: center;
@@ -107,14 +105,13 @@
     color: white !important; /* Ensure text color remains white */
 }
 .footer{
-    background-color: #0C1844;;
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
     height:50px;
+    bottom: 0;
     width: 100%;
-    position: absolute;
+    text-align: center;
 }
-#front, #rear {
-    font-size: 30px;
-    margin-top: 10px;
-    display: inline-block;
-}
+
 

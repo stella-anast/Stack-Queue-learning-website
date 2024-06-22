@@ -112,9 +112,5 @@
     width: 100%;
     position: absolute;
 }
-#front, #rear {
-    font-size: 30px;
-    margin-top: 10px;
-    display: inline-block;
-}
+
 

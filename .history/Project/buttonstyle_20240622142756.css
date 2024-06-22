@@ -45,8 +45,6 @@
 .styling{
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
-    position: relative;
-  min-height: 100vh;
 }
 .header{
     text-align: center;
@@ -108,13 +106,11 @@
 }
 .footer{
     background-color: #0C1844;;
+    padding: 20px 0;
     height:50px;
+   
     width: 100%;
-    position: absolute;
+    text-align: center;
 }
-#front, #rear {
-    font-size: 30px;
-    margin-top: 10px;
-    display: inline-block;
-}
+
 

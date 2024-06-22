@@ -115,6 +115,6 @@
 #front, #rear {
     font-size: 30px;
     margin-top: 10px;
-    display: inline-block;
+    display: inline-block; /* Make the divs inline */
 }
 
