@@ -23,7 +23,7 @@ function modifyStack(action) {
             stack.deleteRow(0);
             top = stack.rows.length;
         } else {
-            alert('Η στοίβα είναι άδεια.Παρακαλώ προσθέστε στοιχεία πρώτα!');
+            alert('Η στοίβα είναι γεμάτη.Παρακαλώ προσθέστε στοιχεία πρώτα!');
         }
     }
     var top = stack.rows.length;

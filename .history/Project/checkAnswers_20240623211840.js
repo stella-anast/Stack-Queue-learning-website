@@ -1,5 +1,4 @@
 function check(){
-  var finalScore = document.getElementById('finalScore');
   var front1=document.getElementById("front1").value.trim();
   var rear1=document.getElementById("rear1").value.trim();
   var front=document.getElementById("front").value.trim();
@@ -192,8 +191,11 @@ function check(){
   //Για να γίνουν πρώτα πράσινα τα input
 
     if (count===26){
-      finalScore.textContent = 'Συγχαρητήρια!!!Τελικό σκορ: 26/26';
+    alert('Συγχαρητήρια.Τελικό σκορ:26/26');
     }else{
-      finalScore.textContent = 'Τελικό σκορ: ' + count + '/26. Παρακαλώ διορθώστε τις λανθασμένες απαντήσεις.';
+      alert('Τελικό σκορ:'+count+'/26.Παρακαλώ διορθώστε τις λανθασμένες απαντήσεις');
     }
+
+
+
 }

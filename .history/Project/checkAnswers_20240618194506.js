@@ -1,5 +1,4 @@
 function check(){
-  var finalScore = document.getElementById('finalScore');
   var front1=document.getElementById("front1").value.trim();
   var rear1=document.getElementById("rear1").value.trim();
   var front=document.getElementById("front").value.trim();
@@ -190,10 +189,11 @@ function check(){
     document.getElementById("answer16").style.backgroundColor='red';
   }
   //Για να γίνουν πρώτα πράσινα τα input
-
+  setTimeout(function() {
     if (count===26){
-      finalScore.textContent = 'Συγχαρητήρια!!!Τελικό σκορ: 26/26';
-    }else{
-      finalScore.textContent = 'Τελικό σκορ: ' + count + '/26. Παρακαλώ διορθώστε τις λανθασμένες απαντήσεις.';
+    alert('Συγχαρητήρια!!!');
     }
+  }, 0);
+
+
 }

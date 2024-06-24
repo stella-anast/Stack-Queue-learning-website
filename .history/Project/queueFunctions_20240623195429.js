@@ -3,7 +3,7 @@ var rear=0;
 function modifyQueue(action){
     var value=document.getElementById('value').value.trim();
     var queue=document.getElementById('queueElements');
-    var maxRows=7;
+    var maxRows=10;
     if(action==='enqueue'){
         if(value!==''){
              if(queue.cells.length<maxRows){

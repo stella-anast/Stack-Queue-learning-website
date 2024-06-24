@@ -194,6 +194,6 @@ function check(){
     if (count===26){
       finalScore.textContent = 'Συγχαρητήρια!!!Τελικό σκορ: 26/26';
     }else{
-      finalScore.textContent = 'Τελικό σκορ: ' + count + '/26. Παρακαλώ διορθώστε τις λανθασμένες απαντήσεις.';
+      finalScore.textContent = 'Τελικό σκορ: ' + count + '/26. Παρακαλώ διορθώστε τις λανθασμένες απαντήσεις';
     }
 }
